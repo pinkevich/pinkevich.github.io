@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Hello</title>
+    <title>GPG PUBLIC KEY</title>
 </head>
+
 <body>
-<p>
+    <h5>Fingerprint: 8FBB 5787 6EC1 9C9B B4B8 CA86 AE70 BDD3 B5CE 8D24</h5>
+    <button class="btn" data-clipboard-target="#gpg-public-key">Copy Public Key to Clipboard</button>
+    <br><br>
+    <textarea id="gpg-public-key" cols="100" rows="170" readonly style="border: none; color: darkgray;">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 mQINBF5BdPMBEACwGxmslLMf5u6/F4dsUSsgSXt7V1SkQ3wG+sW+x+kK3zorCxgS
 ahT0vPf2lB9PXsXifkoYk3UiyBgCF8wsLU4apQG9urlnh0sEu5HLvU4RGVjNb6nh
@@ -173,7 +178,11 @@ IZzmwugOm3GvdY+K5V7Tgg1uhkkWE0BW0SIUlUTa1A5makzxLQSbz+DvM1Nfjy+4
 2Np2CqpeSuWp/gCLsKvQhFs9Xe1Kdw==
 =MkPn
 -----END PGP PUBLIC KEY BLOCK-----
-
-</p>
+</textarea>
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script>
+    new ClipboardJS('.btn');
+</script>
 </body>
+
 </html>
